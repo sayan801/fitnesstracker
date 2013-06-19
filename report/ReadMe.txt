@@ -1,1 +1,0 @@
-FitnessTracker will help users to track his fitness details from Indian Sub continent Context.. It will have preloaded db for Indian cuisine and excercises more suitable for Indian people..
