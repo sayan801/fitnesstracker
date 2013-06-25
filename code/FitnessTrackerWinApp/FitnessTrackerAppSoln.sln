@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessTrackerWinApp", "FitnessTrackerWinApp\FitnessTrackerWinApp.csproj", "{9F4C4EF0-EC93-422A-9ED3-582E0817B04E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessTrackerApp", "FitnessTrackerWinApp\FitnessTrackerApp.csproj", "{9F4C4EF0-EC93-422A-9ED3-582E0817B04E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessTrackerLibrary", "FitnessTrackerLibrary\FitnessTrackerLibrary.csproj", "{CEB184F5-A2DB-4DD4-A69A-EAC6FBE82506}"
 EndProject

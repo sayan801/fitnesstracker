@@ -11,17 +11,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FitnessTrackerLibrary;
 
-namespace FitnessTrackerWinApp
+namespace FitnessTrackerApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        User mainUser;
+        Trainer trainer;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            mainUser = new User();
+            trainer = new Trainer();
         }
     }
 }

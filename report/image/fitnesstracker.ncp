@@ -1,0 +1,257 @@
+<Project>
+  <Name>fitnesstracker</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>FitnessTrackerApp.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>App</Name>
+        <Access>Public</Access>
+        <Location left="224" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public App()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">public static Void Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private User mainUser</Member>
+        <Member type="Field">private Trainer trainer</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>FitnessTrackerLibrary.dll</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>WeightChart</Name>
+        <Access>Public</Access>
+        <Location left="236" top="640" />
+        <Size width="205" height="251" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String userName</Member>
+        <Member type="Field">private Double currentWeightValue</Member>
+        <Member type="Field">private Double targetWeightValue</Member>
+        <Member type="Field">private Double averageWeightValue</Member>
+        <Member type="Field">private WeightUnit unit</Member>
+        <Member type="Field">private DateTime assigningDate</Member>
+        <Member type="Field">private DateTime targetDate</Member>
+        <Member type="Constructor">public WeightChart()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FoodItem</Name>
+        <Access>Public</Access>
+        <Location left="12" top="640" />
+        <Size width="193" height="251" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private Double caloryCount</Member>
+        <Member type="Field">private Double proteinCount</Member>
+        <Member type="Field">private Double fatCount</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private Double preferredQuantity</Member>
+        <Member type="Field">private String imageUrl</Member>
+        <Member type="Constructor">public FoodItem()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DietChart</Name>
+        <Access>Public</Access>
+        <Location left="730" top="640" />
+        <Size width="184" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String userName</Member>
+        <Member type="Field">private String trainerName</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; breakfast</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; lunch</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; dinner</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; snacks</Member>
+        <Member type="Field">private Double targetDailyValue</Member>
+        <Member type="Field">private DateTime assigningDate</Member>
+        <Member type="Field">private DateTime targetDate</Member>
+        <Member type="Constructor">public DietChart()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExerciseItem</Name>
+        <Access>Public</Access>
+        <Location left="12" top="306" />
+        <Size width="240" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private ExerciseType type</Member>
+        <Member type="Field">private Double caloryburnt</Member>
+        <Member type="Field">private Int32 sets</Member>
+        <Member type="Field">private Int32 repetition</Member>
+        <Member type="Field">private Double preferredDuration</Member>
+        <Member type="Field">private Double preferredWeight</Member>
+        <Member type="Field">private String imageUrl</Member>
+        <Member type="Field">private String videoUrl</Member>
+        <Member type="Field">private List&lt;String&gt; specialInstructions</Member>
+        <Member type="Constructor">public ExerciseItem()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExerciseChart</Name>
+        <Access>Public</Access>
+        <Location left="474" top="640" />
+        <Size width="219" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String userName</Member>
+        <Member type="Field">private String trainerName</Member>
+        <Member type="Field">private List&lt;ExerciseItem&gt; exercises</Member>
+        <Member type="Field">private DateTime startTime</Member>
+        <Member type="Field">private DateTime duration</Member>
+        <Member type="Field">private Int32 weeklyTotalDuration</Member>
+        <Member type="Field">private Double targetDailyValue</Member>
+        <Member type="Field">private DateTime assigningDate</Member>
+        <Member type="Field">private DateTime targetDate</Member>
+        <Member type="Constructor">public ExerciseChart()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FoodEntryDaywise</Name>
+        <Access>Public</Access>
+        <Location left="339" top="319" />
+        <Size width="222" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; breakfast</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; lunch</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; dinner</Member>
+        <Member type="Field">private List&lt;FoodItem&gt; snacks</Member>
+        <Member type="Field">private Double totalDailyValue</Member>
+        <Member type="Field">private DateTime currentDate</Member>
+        <Member type="Constructor">public FoodEntryDaywise()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExerciseEntryDaywise</Name>
+        <Access>Public</Access>
+        <Location left="628" top="10" />
+        <Size width="261" height="229" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private List&lt;ExerciseItem&gt; cardioExercise</Member>
+        <Member type="Field">private List&lt;ExerciseItem&gt; strengthExercise</Member>
+        <Member type="Field">private Double totalDailyCalorieBurnt</Member>
+        <Member type="Field">private DateTime currentDate</Member>
+        <Member type="Constructor">public ExerciseEntryDaywise()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>User</Name>
+        <Access>Public</Access>
+        <Location left="586" top="284" />
+        <Size width="306" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String userName</Member>
+        <Member type="Field">private String trainer</Member>
+        <Member type="Field">private String fullName</Member>
+        <Member type="Field">private String imageUrl</Member>
+        <Member type="Field">private DateTime dob</Member>
+        <Member type="Field">private Double weight</Member>
+        <Member type="Field">private ExerciseChart exChart</Member>
+        <Member type="Field">private DietChart dietChart</Member>
+        <Member type="Field">private List&lt;ExerciseEntryDaywise&gt; exercises</Member>
+        <Member type="Field">private List&lt;FoodEntryDaywise&gt; foods</Member>
+        <Member type="Constructor">public User()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Trainer</Name>
+        <Access>Public</Access>
+        <Location left="436" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Int32 id</Member>
+        <Member type="Field">private String userName</Member>
+        <Member type="Field">private String imageUrl</Member>
+        <Member type="Field">private String websiteUrl</Member>
+        <Member type="Field">private List&lt;User&gt; trainees</Member>
+        <Member type="Constructor">public Trainer()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>WeightUnit</Name>
+        <Access>Internal</Access>
+        <Location left="224" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>kg = 0</Value>
+        <Value>pound = 1</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>ExerciseType</Name>
+        <Access>Internal</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Cardio = 0</Value>
+        <Value>Strength = 1</Value>
+        <Value>FreeHand = 2</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>unit</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>type</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>exChart</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartRole>dietChart</StartRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
