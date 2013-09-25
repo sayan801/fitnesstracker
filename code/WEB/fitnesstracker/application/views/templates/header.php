@@ -83,6 +83,7 @@
                                                                     
  																	<li class=""><a href="index.php?/jobseeker/create">Sign up now!</a></li>
                                                                     <li class=""><a href="index.php?/jobseeker/login_view">Member Login</a></li>
+                                                                    <li class=""><a href="index.php?/jobseeker/activity_view">Activity</a></li>
                                                                     <li class=""><a href="#stack1" data-toggle="modal">Feedback</a></li>
                                                                     <li class=""><a href="index.php?/jobseeker/about">About Us</a></li>
                                                                     
