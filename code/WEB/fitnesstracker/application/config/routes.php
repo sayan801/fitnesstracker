@@ -46,6 +46,8 @@ $route['fitnesstracker/create'] = 'fitnesstracker/create';
 $route['jobseeker/about'] = 'jobseeker/about'; 
 $route['jobseeker/login_view'] = 'jobseeker/login_view'; 
 
+$route['jobseeker/activity_view'] = 'jobseeker/activity_view'; 
+
 $route['jobseeker/about_foods'] = 'jobseeker/about_foods';
 
 $route['jobseeker/create'] = 'jobseeker/create';

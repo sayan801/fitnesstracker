@@ -25,6 +25,14 @@ class Jobseeker extends CI_Controller {
         $this->load->view('jobseeker/login_view');
         $this->load->view('templates/footer');
 	}
+        
+        public function activity_view()
+	{
+	
+		$this->load->view('templates/header');
+        $this->load->view('pages/activity');
+        $this->load->view('templates/footer');
+	}
 
     public function view($id) {
         
